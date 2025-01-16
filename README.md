@@ -1,0 +1,2 @@
+# magiboot
+A simple bootloader.
