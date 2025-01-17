@@ -3,7 +3,7 @@ SRCDIR		= $(CURRENTDIR)/src
 OUTPUTDIR	= $(CURRENTDIR)/output
 
 INCLUDEDIR	= $(CURRENTDIR)/include
-COMPILER_DIR	= /home/$$whoami/arm-linux/arm-2011.03/lib/gcc/arm-none-eabi/4.5.2
+COMPILER_DIR	= /usr
 
 # Linker script 
 BASE_ADDR	?= 0x00000000
@@ -19,13 +19,13 @@ MAGIBOOT_BIN	= $(OUTPUTDIR)/magiboot.bin
 
 CROSS_COMPILE ?= arm-none-eabi-
 
-AS	= $(CROSS_COMPILE)as
-CC	= $(CROSS_COMPILE)gcc
-LD	= $(CROSS_COMPILE)ld
-CPP	= $(CROSS_COMPILE)cpp
-STRIP	= $(CROSS_COMPILE)strip
-OBJCOPY	= $(CROSS_COMPILE)objcopy
-OBJDUMP	= $(CROSS_COMPILE)objdump
+AS	= as
+CC	= gcc
+LD	= ld
+CPP	= g++
+STRIP	= strip
+OBJCOPY	= objcopy
+OBJDUMP	= objdump
 
 LIBGCCDIR = $(dir $(shell $(CC) -print-libgcc-file-name))
 CFLAGS 	= -Wall -I$(INCLUDEDIR) -I$(COMPILER_DIR)/include -nostdinc -fno-builtin -O -g

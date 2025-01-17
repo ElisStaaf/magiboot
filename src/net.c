@@ -3,13 +3,13 @@ typedef unsigned short u16, n16;
 typedef unsigned int u32, n32;
 typedef struct {u8 b[6];} n48;
 
-#include "dm9000x.h"
-#include "net.h"
-#define NET_TX_BUF 0x5000
+#include <dm9000x.h>
+#include <net.h>
+#define NET_TX_BUFUF 0x5000
 #define NET_RX_BUF 0x31180000
 //#include <string.h>
-#include "utils.h"
-#include "init.h"
+#include <utils.h>
+#include <init.h>
 
 #define eth_send dm9000_trans
 #define eth_recv dm9000_recv

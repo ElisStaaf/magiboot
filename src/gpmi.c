@@ -1,7 +1,7 @@
 
-#include "regs_imx233.h"
-#include "init.h"
-#include "utils.h"
+#include <regs_imx233.h>
+#include <init.h>
+#include <utils.h>
 
 static GPMI * const gpmi = (GPMI*) REGS_GPMI_BASE_PHYS;
 #define hw_gpmi (*gpmi)

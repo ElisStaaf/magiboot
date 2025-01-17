@@ -1,5 +1,5 @@
-#include "regs_imx233.h"
-#include "serial.h"
+#include <regs_imx233.h>
+#include <serial.h>
 
 static UARTDBG * const uartdbg = (UARTDBG *) REGS_UARTDBG_BASE_PHYS;
 #define hw_uartdbg (*uartdbg)

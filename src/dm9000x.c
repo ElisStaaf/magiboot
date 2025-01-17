@@ -66,10 +66,10 @@ TODO: external MII is not functional, only internal at the moment.
 #include <asm/io.h>
 */
 
-#include "dm9000x.h"
-#include "utils.h"
-#include "gpmi.h"
-#include "init.h"
+#include <dm9000x.h>
+#include <utils.h>
+#include <gpmi.h>
+#include <init.h>
 
 
 #define DM9000_DATA 0

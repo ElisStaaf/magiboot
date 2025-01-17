@@ -1,8 +1,8 @@
-#include "utils.h"
-#include "main.h"
-#include "init.h"
-#include "gpmi.h"
-#include "net.h"
+#include <utils.h>
+#include <main.h>
+#include <init.h>
+#include <gpmi.h>
+#include <net.h>
 
 extern void *get_heap_start(void);
 CMD_FUNC_DEF( cmd_dm )

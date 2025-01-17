@@ -1,8 +1,8 @@
 
-#include "regs_imx233.h"
-#include "init.h"
-#include "serial.h"
-#include "dm9000x.h"
+#include <regs_imx233.h>
+#include <init.h>
+#include <serial.h>
+#include <dm9000x.h>
 
 static PINCTRL * const pinctrl = (PINCTRL*) REGS_PINCTRL_BASE_PHYS;
 #define hw_pinctrl (*pinctrl) 

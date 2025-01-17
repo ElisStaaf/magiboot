@@ -1,5 +1,5 @@
-#include "utils.h"
-#include "serial.h"
+#include <utils.h>
+#include <serial.h>
 #include <stdarg.h>
 /* minimal implementation of string functions */
 /*
